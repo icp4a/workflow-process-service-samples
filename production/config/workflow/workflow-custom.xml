@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+    <!--Properties file for customer cluster scoped properties. -->
+
+    <!--
+    <common>
+        <environment-name merge="replace">My Environment</environment-name>
+                <default-webapi-userid-cache-size merge="replace">500</default-webapi-userid-cache-size>
+    </common>
+    -->
+    <!-- surfaces user defined list of link asset types. The links asset types are available to use
+    in documentation.
+        <authoring-environment>
+                <asset-link>
+                        <asset-types>
+                        <asset-type>userDefined</asset-type>
+                </asset-types>
+                </asset-link>
+        </authoring-environment>
+        -->
+
+        <!-- to disable WalkMe in App Designer -->
+        <!-- <authoring-environment>
+                <walk-me-app merge="replace">false</walk-me-app>
+        </authoring-environment>
+    -->
+
+    <!-- to disable WalkMe in BAStudio -->
+    <!-- <server>
+        <walk-me-bastudio merge="replace">false</walk-me-bastudio>
+    </server>
+    -->
+
+    <!-- Sample connector configuration
+    <server>
+        <reloadable-jar-location>temp</reloadable-jar-location>
+        <reloadable-jar-location-load-only-once>false</reloadable-jar-location-load-only-once>
+    </server>
+    -->
+
+    <!-- Sample default work schedule config.
+        <server>
+                <default-work-schedule  merge="replace">
+                                <time-schedule>7AM-7PM Every Day</time-schedule>
+                                <time-zone>CST</time-zone>
+                                <holiday-schedule>empty holiday</holiday-schedule>
+                </default-work-schedule>
+        </server>
+        -->
+
+    <!-- Control the Business Object representation for inbound Web Services
+    <common merge="mergeChildren">
+        <webservices merge="mergeChildren">
+            <enable-advanced-parameter-properties-for-wsdl merge="replace">true</enable-advanced-parameter-properties-for-wsdl>
+        </webservices>
+    </common>
+    -->
+
+        <!--
+    <server>
+        <webservice-security>
+             Copy to tw-external-runtime/process-server
+            <keystore-file merge="replace">C:\ibm\kf\rtc\deploy2\AppServer\profiles\StandAloneProfile\etc\ws-security\samples\dsig-sender.ks</keystore-file>
+             client
+            <keystore-password-encrypted merge="replace"><![CDATA[mYnSm03ybw2omo2+zPkfLQ==:Y893w/8J1CI4iJ6/ph2nOA==]]></keystore-password-encrypted>
+            <private-key>
+                <alias>soaprequester</alias>
+                <keyname>soaprequester></keyname>
+                 client
+                <password-encrypted><![CDATA[mYnSm03ybw2omo2+zPkfLQ==:Y893w/8J1CI4iJ6/ph2nOA==]]></password-encrypted>
+            </private-key>
+              <private-key>
+                <alias>soapprovider</alias>
+                <keyname>soaprequester</keyname>
+            </private-key>
+              store type
+            <keystore-type>JKS</keystore-type>
+            <certificate>C:\ibm\kf\rtc\deploy2\AppServer\profiles\StandAloneProfile\etc\ws-security\samples\client.cert</certificate>
+             Also contains server1 cert
+        </webservice-security>
+    </server>
+    -->
+
+    <!-- Sample configuration for UMSTeams.
+         The names myumsserver, myteamserver and 9876 are just examples for
+         the hosts and port where UMS and UMSTeams are running
+    <common merge="mergeChildren">
+        <security>
+            <ums-auth-options>
+                <ums-auth-endpoint-url>https://myumsserver:9876/oidc/endpoint/ums</ums-auth-endpoint-url>
+                <ums-auth-client-alias-name>UMSAuth-client-alias</ums-auth-client-alias-name>
+                <ums-auth-ssl-config></ums-auth-ssl-config>
+                <ums-auth-connection-timeout>360000</ums-auth-connection-timeout>
+                <ums-auth-receive-timeout>360000</ums-auth-receive-timeout>
+                <ums-auth-connection-pool-size>20</ums-auth-connection-pool-size>
+                <disable-cn-check>false</disable-cn-check>
+            </ums-auth-options>
+            <ums-teams-options>
+                <ums-teams-endpoint-url>https://myteamserver:9876/teamserver/rest</ums-teams-endpoint-url>
+                <ums-teams-auth-alias-name>UMSTeams-auth-alias</ums-teams-auth-alias-name>
+                <wait-for-ready-on-startup-timeout>600</wait-for-ready-on-startup-timeout>
+                <ums-teams-ssl-config></ums-teams-ssl-config>
+                <ums-teams-connection-timeout>360000</ums-teams-connection-timeout>
+                <ums-teams-receive-timeout>360000</ums-teams-receive-timeout>
+                <ums-teams-connection-pool-size>20</ums-teams-connection-pool-size>
+                <disable-cn-check>false</disable-cn-check>
+            </ums-teams-options>
+        </security>
+    </common>
+    -->
+</properties>

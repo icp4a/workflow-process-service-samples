@@ -1,0 +1,9 @@
+<server>
+    <logging 
+        consoleLogLevel="INFO" 
+        traceFormat="ENHANCED" 
+        maxFiles="10" 
+        maxFileSize="20" 
+        traceSpecification="*=info"
+    />
+</server>
