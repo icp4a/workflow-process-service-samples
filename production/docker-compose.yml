@@ -135,7 +135,7 @@ volumes:
     # driver_opts:
     #   type: none
     #   o: bind
-    #   device: "./"
+    #   device: "$PWD/"
 
 
 networks:
