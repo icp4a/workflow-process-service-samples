@@ -17,9 +17,9 @@ services:
   #############################################################################################################
   workflow:
     # un-comment the following line if you plan to run the Authoring environment
-    image: cp.icr.io/cp/cp4a/workflow-ps/workflow-ps-authoring:22.0.2
+    image: cp.icr.io/cp/cp4a/workflow-ps/workflow-ps-authoring:23.0.1
     # ...or un-comment the following line if you plan to run the Process Server environment
-    # image: cp.icr.io/cp/cp4a/workflow-ps/workflow-ps-server:22.0.2
+    # image: cp.icr.io/cp/cp4a/workflow-ps/workflow-ps-server:23.0.1
     container_name: workflow
     hostname: workflow
     ports:
